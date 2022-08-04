@@ -1,0 +1,36 @@
+
+ 
+ 
+ @mixin mixincomision ($argumento1, $argumento2, $argumento3, $argumento4, $argumento5,
+ $argumento6, $argumento7, $argumento8, $argumento9) 
+ {
+width: $argumento1 ;
+overflow: $argumento2;
+border: $argumento3 ;
+border-radius: $argumento4;
+padding: $argumento5 ;
+margin: $argumento6 ;
+background-image: $argumento7 ;
+background-repeat:$argumento8 ;
+background-size:$argumento9 ;   
+ }
+
+
+ .caja__comision1{
+    @include mixincomision (300px, hidden,15px solid white, 10px, 50px, 20px, url(img/strawberry.jpg), no-repeat, cover)
+ }
+
+ .caja__comision2{
+    @include mixincomision(300px, hidden,15px solid white, 10px, 50px, 20px, url(img/strawberry.jpg), no-repeat, cover)
+ }
+
+
+
+ @import
+ 'components/imagenesfondos',
+ 'components/boton',
+ 'components/estructurasass',
+'components/paletacolores',
+'components/titulos.scss',
+'compenents/estilos';
+

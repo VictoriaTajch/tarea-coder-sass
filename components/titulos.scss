@@ -1,0 +1,29 @@
+@mixin titulos ($argumento1,$argumento2, $argumento3,$argumento4, $argumento5, $argumento6, $argumento7, $argumento8,
+$argumento9, $argumento10) 
+{font-size: $argumento1 ;
+font-family: $argumento2 ;
+color: $argumento3 ;
+align-content: $argumento4 ;
+margin-top: $argumento5 ;
+margin-bottom: $argumento6 ;
+-webkit-animation: $argumento7 ;
+animation: $argumento8 ;
+-webkit-animation-duration: $argumento9 ;
+animation-duration: $argumento10 ;
+
+}
+
+.primer__titulo{
+   @include titulos(55px,"Cookie" cursive ,rgb(88 28 73) ,space-around ,
+   1rem ,1rem ,bounce ,bounce ,2s ,2s )
+}
+
+.titulo__dos{
+   @include titulos(30px, "Cookie" cursive, rgb(88 28 73), space-around,
+   1rem,1rem, bounce, bounce, 2s, 2s)
+}
+
+.titulo__tres{
+   @include titulos (1.5rem, "Cookie" cursive, rgb(88 28 73), space-around
+   auto, auto,bounce, bounce, 2s,2s)
+}

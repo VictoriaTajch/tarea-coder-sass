@@ -1,0 +1,447 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom, rgb(245, 207, 233), rgb(252, 158, 247), white);
+}
+
+.titulo {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+
+.content {
+  float: center;
+  background-color: rgb(213, 235, 255);
+  width: 100%;
+  padding: center;
+  border-top: solid 10px white;
+  border-bottom: solid 10px white;
+  background-image: url(img/cinnamon.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Cookie", cursive;
+}
+
+/*---------------scss-esta es la parte de la tarea-------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+ index -------*/
+/*-------------header---------------------------*/
+.header .logo .logoindex {
+  grid-area: 1/1/2/2;
+}
+.header .logo .logo {
+  -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+  animation: pulsate-bck 0.5s ease-in-out infinite both;
+  width: 150px;
+  border-radius: 5rem;
+}
+@-webkit-keyframes pulsate-bck {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.header .headerindex {
+  grid-area: 2/1/1/6;
+}
+.header .headerindex .menuSuperior {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Cookie", cursive;
+}
+.header .headerindex .menuSuperior li {
+  display: inline-block;
+  background: url(img/conejo.png) no-repeat left;
+  height: 30px;
+  padding-left: 25px;
+}
+.header .headerindex .menuSuperior a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: rgb(88, 28, 73);
+  color: beige;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  gap: 20px;
+  justify-content: space-around;
+}
+.header .headerindex .menuSuperior ul {
+  padding: 2rem;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin-left: 25px;
+}
+.header .headerindex p {
+  color: rgb(88, 28, 73);
+}
+
+/*--------------main-----------------------------*/
+.content {
+  float: center;
+  background-color: rgb(213, 235, 255);
+  width: 100%;
+  padding: center;
+  border-top: solid 1.2rem white;
+  border-bottom: solid 1.2rem white;
+  background-image: url(img/cinnamon.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Cookie", cursive;
+  grid-area: 2/1/3/6;
+}
+.content .primer__titulo {
+  font-size: 55px;
+  align-content: space-around;
+  margin: top 1rem;
+  margin-bottom: 1rem;
+  font-family: "Cookie", cursive;
+  color: rgb(105, 22, 101);
+  -webkit-animation: bounce;
+  animation: bounce;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+.content .primer__titulo .texto {
+  font-size: 19px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.content .video__inicio {
+  width: 500px;
+  height: 300px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/*-----------------------footer--------------------------------*/
+.footer {
+  margin: 0 auto;
+  clear: both;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.footer .footer__flex {
+  display: flex;
+  justify-content: center;
+}
+.footer .footer__flex .footer__titulo {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+.footer .footer__flex .footer__menu {
+  list-style: none;
+  text-align: center;
+  width: 150vh;
+  border-radius: 10px;
+  background-image: url(img/milku.jpg);
+  background-size: auto;
+  background-repeat: repeat;
+  border-color: antiquewhite;
+}
+.footer .footer__flex .footer__menu a {
+  color: rgb(88, 28, 73);
+  text-decoration: none;
+  text-align: center;
+  padding: 3rem;
+  font-size: 0.9rem;
+}
+
+.footer__creditos {
+  font-size: 0, 6rem;
+  text-align: center;
+}
+
+/*--contenido----*/
+.grid_padreindex {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 13px;
+  grid-row-gap: 13px;
+}
+
+.contenidoindex {
+  grid-area: 2/1/3/6;
+}
+
+.footerindex {
+  grid-area: 3/1/4/6;
+}
+
+.footer__creditos {
+  grid-area: 4/1/5/6;
+}
+
+.padre__comision {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 8px;
+}
+
+.caja__comision1 {
+  grid-area: 1/2/2/3;
+  -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: shadow-pop-tr 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes shadow-pop-tr {
+  0% {
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    transform: translateX(-8px) translateY(8px);
+  }
+}
+@keyframes shadow-pop-tr {
+  0% {
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    transform: translateX(-8px) translateY(8px);
+  }
+}
+.caja__comision2 {
+  grid-area: 1/4/2/5;
+  -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: shadow-pop-tr 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes shadow-pop-tr {
+  0% {
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    transform: translateX(-8px) translateY(8px);
+  }
+}
+@keyframes shadow-pop-tr {
+  0% {
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    transform: translateX(-8px) translateY(8px);
+  }
+}
+.caja__comision1 {
+  width: 300px;
+  overflow: hidden;
+  border: 15px solid white;
+  border-radius: 10px;
+  padding: 50px;
+  margin: 20px;
+  background-image: url(img/strawberry.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caja__comision2 {
+  width: 300px;
+  border: 15px solid white;
+  border-radius: 10px;
+  padding: 50px;
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(img/strawberry.jpg);
+}
+
+.grid__materiales {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 2fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+
+.caja__materiales {
+  background-color: aliceblue;
+  background-image: url(img/original.png);
+  background-position: center;
+  padding: 40px;
+  border: dashed palevioletred 6px;
+  border-radius: 9px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 25px;
+}
+
+li {
+  background: url(img/conejo.png) no-repeat left;
+  height: 30px;
+  padding-left: 25px;
+}
+
+.contenido__imagenes {
+  background-color: rgb(247, 221, 234);
+  align-items: center;
+  align-content: center;
+}
+
+.video__inicio {
+  width: 500px;
+  height: 300px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.imagen {
+  border-radius: 5rem;
+}
+
+/* !---------------texto---------------------------------------->*/
+.titulo__dos {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: rgb(230, 103, 173);
+  font-family: "Cookie", cursive;
+  -webkit-animation: bounce;
+  animation: bounce;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.primer__titulo {
+  font-size: 55px;
+  align-content: space-around;
+  margin: top 1rem;
+  margin-bottom: 1rem;
+  font-family: "Cookie", cursive;
+  color: rgb(88, 28, 73);
+  -webkit-animation: bounce;
+  animation: bounce;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.titulo__tres {
+  font-family: "Cookie", cursive;
+  font-size: 1.5rem;
+  color: rgb(88, 28, 73);
+  -webkit-animation: bounce;
+  animation: bounce;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.texto {
+  font-size: 19px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.titulo__materiales {
+  margin-bottom: 1rem;
+  font-family: "Cookie", cursive;
+}
+
+.articulo__parrafo {
+  display: flex;
+  width: 60%;
+  display: table-footer-group;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5 ease-in-out;
+  border-radius: 25px;
+  background-color: rgb(88, 28, 73);
+}
+
+.imagen_ilus {
+  background-image: url(./img/demon.jpg);
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+.info_ilus {
+  width: 500px;
+  height: 500px;
+  background-color: aliceblue;
+  transition: opacity 0.6 ease-in-out;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+.imagen_ilus:hover .info_ilus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.imagen_kitty {
+  background-image: url(./img/kitty.jpg);
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+.imagen_kitty:hover .info_ilus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.imagen_alice {
+  background-image: url(./img/Alice.jpg);
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+.imagen_alice:hover .info_ilus {
+  cursor: pointer;
+  opacity: 0.8;
+}/*# sourceMappingURL=estilos.css.map */

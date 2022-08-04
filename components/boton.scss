@@ -1,0 +1,32 @@
+%btn{
+    height: 50px;
+    min-width:120px;
+    border: 0.5rem pink;
+    border-radius: 5px;
+    color: $darkviolet;
+    font-size: 16px;
+    margin:5px 0;
+    box-shadow: 2px 2px 6px 2px $black;
+    &:hover{cursor: pointer;
+        background-color: $darkviolet;
+        color: pink;
+    border: $darkviolet;
+    box-shadow: 0 12px 16px 0 $black, 0 17px 50px 0 $black}
+    }
+    
+    .#{$brand}-btn-{
+    
+        &cute, &notcute{
+             @extend %btn;
+             -webkit-transition-duration: 0.4s;
+             transition-duration: 0.4s;
+        }
+        
+        &cute{
+        background: $pinku ;}
+         
+        &notcute{
+        background: $celeste;}
+        }
+    
+        
