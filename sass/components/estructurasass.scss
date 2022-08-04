@@ -1,0 +1,167 @@
+.header{
+    .logo{
+      .logoindex{
+  
+      grid-area: 1/1/2/2;}
+    
+   .logo{   -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+    animation: pulsate-bck 0.5s ease-in-out infinite both;
+    width: 150px;
+    border-radius: 5rem;}}
+    
+    
+    @-webkit-keyframes pulsate-bck {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(0.9);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    @keyframes pulsate-bck {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(0.9);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  
+  
+    .headerindex{
+      grid-area: 2/1/1/6;
+  
+  
+    .menuSuperior {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: "Cookie", cursive;
+  
+    li{  display: inline-block;
+      background: url(img/conejo.png) no-repeat left;
+  height: 30px;
+  padding-left: 25px;}
+  
+    a{ text-decoration: none;
+      text-transform: uppercase;
+      background-color: $colorvioleta;
+      color: beige;
+      padding: 1rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      gap: 20px;
+      justify-content: space-around;}
+  
+      
+      ul{padding: 2rem;
+    list-style-type: none;
+    text-align: center;
+  padding: 0;
+  margin-left: 25px;}
+   
+  }
+  
+  
+  p {
+    color: $colorvioleta;
+  }
+  
+    }}
+
+    
+.content{
+  float: center;
+  background-color: rgb(213, 235, 255);
+  width: 100%;
+  padding: center;
+  border-top: solid 1.2rem white;
+  border-bottom: solid 1.2rem white;
+  background-image: map-get($map: $imagenesfondo, $key: 'cinnamon' );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Cookie", cursive;
+  grid-area: 2/1/3/6;
+
+  .primer__titulo{  font-size: 55px;
+    align-content: space-around;
+    margin: top 1rem;
+    margin-bottom: 1rem;
+    font-family: "Cookie", cursive;
+    color: rgb(105, 22, 101);
+    -webkit-animation: bounce;
+            animation: bounce;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    .texto {
+              font-size: 19px;
+              font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            }}
+  .video__inicio{  width: 500px;
+    height: 300px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;}
+}
+
+
+
+/*-----------------------footer--------------------------------*/
+  .footer {
+    margin: 0 auto;
+    clear: both;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    .footer__flex{ display: flex;
+      justify-content: center;
+    .footer__titulo{ margin-top: 3rem;
+      margin-bottom: 3rem;
+      font-size: 3rem;
+    }
+    .footer__menu{    list-style: none;
+      text-align: center;
+      width: 150vh;
+      border-radius: 10px;
+      background-image: url(img/milku.jpg);
+      background-size: auto;
+      background-repeat: repeat;
+  
+      border-color: antiquewhite;
+  
+      a {
+        color: $colorvioleta;
+        text-decoration: none;
+        text-align: center;
+        padding: 3rem;
+        font-size: 0.9rem;
+      }}
+    
+    }
+  }
+ 
+
+    @import
+    'components/imagenesfondo',
+    'components/boton',
+   'components/paletacolores',
+   'components/titulos';
+   
+   

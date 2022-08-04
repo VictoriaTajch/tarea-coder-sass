@@ -1,0 +1,23 @@
+.caja__comision1 {
+  width: 300px;
+  overflow: hidden;
+  border: 15px solid white;
+  border-radius: 10px;
+  padding: 50px;
+  margin: 20px;
+  background-image: url(img/strawberry.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caja__comision2 {
+  width: 300px;
+  overflow: hidden;
+  border: 15px solid white;
+  border-radius: 10px;
+  padding: 50px;
+  margin: 20px;
+  background-image: url(img/strawberry.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=main.css.map */
